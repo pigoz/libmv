@@ -9,7 +9,7 @@ include_directories(${OPENCL_INCLUDE_DIR})
 include_directories(include)
 include_directories(src)
 
-add_library(libmv src/mv.c src/super.c src/ta.c src/ta_utils.c)
+add_library(libmv src/mv.c src/clinfo.c src/super.c src/ta.c src/ta_utils.c)
 target_link_libraries(libmv ${OpenCL_LIBRARIES})
 
 add_executable(examples_super examples/super.c)
