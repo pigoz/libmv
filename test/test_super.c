@@ -3,6 +3,7 @@
 void test_mv_super_downscale_levels()
 {
     assert_int_equal(mv_super_downscale_levels(1280, 4), 9);
+    assert_int_equal(mv_super_downscale_levels(1280, 16), 7);
 }
 
 int main(void)
