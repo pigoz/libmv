@@ -1,0 +1,5 @@
+include_directories ("${PROJECT_SOURCE_DIR}/src")
+add_executable(test_super test_super.c)
+add_dependencies(test_super test_super)
+add_test(test_super test_super)
+target_link_libraries(test_super libmv cmocka)

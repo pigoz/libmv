@@ -40,6 +40,8 @@ int mv_context_initialize(mv_context *);
 void mv_context_free(mv_context *);
 void mv_clinfo(void);
 
+int mv_super_downscale_levels(int size, int min_blk_size);
+
 #ifdef __cplusplus
 }
 #endif
